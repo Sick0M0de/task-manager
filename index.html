@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enhanced Task Manager</h1>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter your task here">
+            <select id="priorityInput">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+        <div class="task-controls">
+            <button onclick="clearAllTasks()">Clear All Tasks</button>
+            <button onclick="sortTasks()">Sort Tasks</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
